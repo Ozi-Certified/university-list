@@ -1,5 +1,4 @@
 $(document).ready(function() {
-    //$("universityList").html("");
     $.get("http://universities.hipolabs.com/search?country=Canada", function(data, status) {
         if (status == "success" && data != null && data != undefined) {
             for (let index = 0; index < data.length; index++) {
